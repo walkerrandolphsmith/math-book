@@ -44,14 +44,14 @@ program.
 A proposition is a declartive sentence 
 that is either true or false.
 \begin{equation}
-p
+\mbox{p}
 \end{equation}
 
 \subsection{Negation of p}
 The negation of p 
 has the opposite truth value of p.
 \begin{equation}
-\neg p
+\neg \mbox{p}
 \end{equation}
 
 \subsection{Conjunction of p and q}
@@ -61,7 +61,7 @@ when
 both p and q are true
 and false otherwise.
 \begin{equation}
-p \wedge q
+\mbox{p} \wedge \mbox{q}
 \end{equation}
 
 \subsection{Disjunction of p and q}
@@ -71,7 +71,7 @@ when
 both p and q are false
 and true otherwise.
 \begin{equation}
-p \lor q
+\mbox{p} \lor \mbox{q}
 \end{equation}
 
 \subsection{Exclusive or of p and q}
@@ -81,7 +81,7 @@ when
 exactly one of p and q are true
 and false otherwise.
 \begin{equation}
-p \oplus q
+\mbox{p} \oplus \mbox{q}
 \end{equation}
 
 \subsection{Conditional statement}
@@ -91,7 +91,7 @@ when
 p is true and q is false
 and true otherwise.
 \begin{equation}
-p \rightarrow q
+\mbox{p} \rightarrow \mbox{q}
 \end{equation}
 
 \subsection{Biconditional statement}
@@ -101,7 +101,7 @@ when
 p and q have the same truth value
 and false otherwise.
 \begin{equation}
-p \leftrightarrow q
+\mbox{p} \leftrightarrow \mbox{q}
 \end{equation}
 
 \subsection{Logical Equivalence}
@@ -111,7 +111,7 @@ that is the compound proposition is true
 no matter the truth values of the propositional variables.
 
 \begin{equation}
-p \equiv q
+\mbox{p} \equiv \mbox{q}
 \end{equation}
 
 \subsection{Propositional Function}
@@ -130,7 +130,7 @@ Value of a propositional function P at the n-tuple $(x_{1},x_{2},\dots,x_{n})$.
 P(x_{1},x_{2},\dots,x_{n})
 \end{equation}
 
-\subsection{Universal quantification}
+\subsection{Universal Quantification}
 Universal quantification of P(x)
 is true
 when
@@ -143,7 +143,7 @@ there is an x for which P(x) is false.
 \end{equation}
 
 
-\subsection{Existential quanification}
+\subsection{Existential Quanification}
 Existential quantification of P(x)
 is true
 when
@@ -155,8 +155,7 @@ P(x) is false for every x.
 \exists x P(x)
 \end{equation}
 
-
-\subsection{Quantifaction equivalences}
+\subsection{Quantifaction Equivalences}
 Statement is true
 when
 there is an x for which P(x) is false
@@ -164,22 +163,25 @@ and
 false 
 when
 P(x) is true for every x.
-\begin{equation}
-\neg \forall x P(x)\equiv\exists x \neg P(x)
-\end{equation}
 
-
-\subsection{Quantifaction equivalences}
-Statement is true
+\begin{subequations}\label{no}
+\begin{align}
+\neg \forall x P(x)\equiv\exists x \neg P(x)\\
+\intertext{Statement is true
 when
 for every x P(x) is true
 and
 false 
 when 
-there is an x for which P(x) is true.
-\begin{equation}
+there is an x for which P(x) is true.}
 \neg \exists x P(x)\equiv\forall x \neg P(x)
-\end{equation}
+\end{align}
+\end{subequations}
+
+
+
+
+
 
 \subsection{Quantification of Two Variables}
 P(x,y)
@@ -193,30 +195,14 @@ when there is a pair x,y for which P(x,y) is false.
 \begin{align}
 \forall x \forall y P(x,y)\label{quan_first}\\
 \forall y \forall x P(x,y)\label{quan_second}
-\end{align}
-\end{subequations}
-
-%
-For every x there is a y for which P(x,y) is true.
-There is an x such that P(x,y) is false for every y.
-
-\begin{equation}
-\forall x \exists y P(x,y)
-\end{equation}
-
-%
-There is an x for which P(x,y) is true for every y.
-For every x there is a y for which P(x,y) is false.
-\begin{equation}
-\exists x \forall y P(x,y)
-\end{equation}
-
-%
-There is a pair x,y for which P(x,y) is true.
-P(x,y) is false for every pair x,y.
-
-\begin{subequations}\label{quanD}
-\begin{align}
+\intertext{For every x there is a y for which P(x,y) is true.
+There is an x such that P(x,y) is false for every y.}
+\forall x \exists y P(x,y)\\
+\intertext{There is an x for which P(x,y) is true for every y.
+For every x there is a y for which P(x,y) is false.}
+\exists x \forall y P(x,y)\\
+\intertext{There is a pair x,y for which P(x,y) is true.
+P(x,y) is false for every pair x,y.}
 \exists x \exists y P(x,y)\label{quanD_first}\\
 \exists y \exists x P(x,y)\label{quanD_second}
 \end{align}
@@ -225,9 +211,6 @@ P(x,y) is false for every pair x,y.
 
 \section{Laws of Logical Equivalence}
 \setcounter{equation}{0}
-\begin{align*}
-Logical Equivalences\\
-\end{align*}
 
 \subsection{De Morgan's Laws}
 
@@ -315,6 +298,8 @@ p \lor \neg p\equiv T\label{neg_first}\\
 p \wedge \neg p \equiv F\label{neg_second}
 \end{align}
 \end{subequations}
+
+
 %
 %
 %
@@ -421,23 +406,15 @@ Given a set A, the power set of A is the set of all subsets of the set A
 \pagebreak
 \section{Number Theory and Cryptography}
 \setcounter{equation}{0}
-% Eulers 
-If 
-n
-and
-m
-are
-relatively
-prime 
-for
-some
-m,n $\in$ $\mathbb{Z}^+$
+
+
+\subsection{Coprime}
+Integers m and n are relatively prime if 
 \begin{align}
-n^{\Phi(m)}\equiv 1\mod{m}
+\gcd (m,n) = 1
 \end{align}
 
-
-% Eulers 
+\subsection{Euler's Theorm}
 If 
 n
 and
@@ -448,7 +425,15 @@ prime
 for
 some
 m,n $\in$ $\mathbb{Z}^+$
+
+\begin{subequations}
 \begin{align}
+n^{\Phi(m)}\equiv 1\mod{m}\\
+\intertext{ }
 n^{\Phi(m)} - 1\equiv 0\mod{m}
 \end{align}
+\end{subequations}
+
+
+
 \end{document}
