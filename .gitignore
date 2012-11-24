@@ -44,4 +44,5 @@ tmp
 *.dvi
 *.log
 *.toc
+*.synctex.gz
 
