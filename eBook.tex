@@ -1,0 +1,454 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\title{Logic, Sets, Number Theory, and Counting}
+\date{\today}
+\author{Walker Smith}
+
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\tableofcontents{}
+\pagebreak
+
+%
+%
+% This documentatoin is used as referrence to topics in the feild of 
+% Mathematics.
+%
+%
+\section{Introduction}
+\LaTeX{} is 
+a 
+document
+preparation
+system
+for
+the
+\TeX{}
+typesetting
+program.
+
+%
+%
+%
+% Logic
+%
+%
+%
+\pagebreak
+\section{Propositional Logic}
+
+\subsection{Proposition}
+A proposition is a declartive sentence 
+that is either true or false.
+\begin{equation}
+p
+\end{equation}
+
+\subsection{Negation of p}
+The negation of p 
+has the opposite truth value of p.
+\begin{equation}
+\neg p
+\end{equation}
+
+\subsection{Conjunction of p and q}
+The conjunction of p and q
+is true
+when
+both p and q are true
+and false otherwise.
+\begin{equation}
+p \wedge q
+\end{equation}
+
+\subsection{Disjunction of p and q}
+The disjunction of p and q
+is false
+when
+both p and q are false
+and true otherwise.
+\begin{equation}
+p \lor q
+\end{equation}
+
+\subsection{Exclusive or of p and q}
+The exclusive or of p and q
+is true
+when
+exactly one of p and q are true
+and false otherwise.
+\begin{equation}
+p \oplus q
+\end{equation}
+
+\subsection{Conditional statement}
+The conditional statement if p then q
+is false
+when
+p is true and q is false
+and true otherwise.
+\begin{equation}
+p \rightarrow q
+\end{equation}
+
+\subsection{Biconditional statement}
+The biconditional statement p if and only if q
+is true
+when
+p and q have the same truth value
+and false otherwise.
+\begin{equation}
+p \leftrightarrow q
+\end{equation}
+
+\subsection{Logical Equivalence}
+compound propositions p and q are logically equivalent if 
+p if and only if q is a tautology,
+that is the compound proposition is true 
+no matter the truth values of the propositional variables.
+
+\begin{equation}
+p \equiv q
+\end{equation}
+
+\subsection{Propositional Function}
+Value of a propositional function P at x.
+Function defined by it's predicate,P and subject, x
+where
+x is the subject of the statement and
+P refers to a property that the subject has.
+\begin{equation}
+P(x)
+\end{equation}
+
+\subsection{Propositional Multivariable Function}
+Value of a propositional function P at the n-tuple $(x_{1},x_{2},\dots,x_{n})$.
+\begin{equation}
+P(x_{1},x_{2},\dots,x_{n})
+\end{equation}
+
+\subsection{Universal quantification}
+Universal quantification of P(x)
+is true
+when
+P(x) is true for every x
+and false
+when
+there is an x for which P(x) is false.
+\begin{equation}
+\forall x P(x)
+\end{equation}
+
+
+\subsection{Existential quanification}
+Existential quantification of P(x)
+is true
+when
+there exists an element x in the domain such that P(x)
+and false
+when
+P(x) is false for every x.
+\begin{equation}
+\exists x P(x)
+\end{equation}
+
+
+\subsection{Quantifaction equivalences}
+Statement is true
+when
+there is an x for which P(x) is false
+and
+false 
+when
+P(x) is true for every x.
+\begin{equation}
+\neg \forall x P(x)\equiv\exists x \neg P(x)
+\end{equation}
+
+
+\subsection{Quantifaction equivalences}
+Statement is true
+when
+for every x P(x) is true
+and
+false 
+when 
+there is an x for which P(x) is true.
+\begin{equation}
+\neg \exists x P(x)\equiv\forall x \neg P(x)
+\end{equation}
+
+\subsection{Quantification of Two Variables}
+P(x,y)
+is true
+for every pair x,y
+and
+false
+when there is a pair x,y for which P(x,y) is false.
+
+\begin{subequations}\label{quan}
+\begin{align}
+\forall x \forall y P(x,y)\label{quan_first}\\
+\forall y \forall x P(x,y)\label{quan_second}
+\end{align}
+\end{subequations}
+
+%
+For every x there is a y for which P(x,y) is true.
+There is an x such that P(x,y) is false for every y.
+
+\begin{equation}
+\forall x \exists y P(x,y)
+\end{equation}
+
+%
+There is an x for which P(x,y) is true for every y.
+For every x there is a y for which P(x,y) is false.
+\begin{equation}
+\exists x \forall y P(x,y)
+\end{equation}
+
+%
+There is a pair x,y for which P(x,y) is true.
+P(x,y) is false for every pair x,y.
+
+\begin{subequations}\label{quanD}
+\begin{align}
+\exists x \exists y P(x,y)\label{quanD_first}\\
+\exists y \exists x P(x,y)\label{quanD_second}
+\end{align}
+\end{subequations}
+
+
+\section{Laws of Logical Equivalence}
+\setcounter{equation}{0}
+\begin{align*}
+Logical Equivalences\\
+\end{align*}
+
+\subsection{De Morgan's Laws}
+
+\begin{subequations}\label{deMorgan}
+\begin{align}
+\neg (p \wedge q) \equiv \neg p \lor \neg q\label{de_first}\\
+\neg (p \lor q) \equiv \neg p \wedge \neg q\label{de_second}
+\end{align}
+\end{subequations}
+
+\subsection{Identity Laws}
+
+\begin{subequations}\label{identity}
+\begin{align}
+p \wedge T \equiv p\label{id_first}\\
+p \lor F \equiv p\label{id_second}
+\end{align}
+\end{subequations}
+
+\subsection{Domination Laws}
+
+\begin{subequations}\label{domination}
+\begin{align}
+p \lor T \equiv T\label{dom_first}\\
+p \wedge F \equiv F\label{dom_second}
+\end{align}
+\end{subequations}
+
+\subsection{Idempotent Laws}
+
+\begin{subequations}\label{indempotent}
+\begin{align}
+p \lor p \equiv p\label{indem_first}\\
+p \wedge p \equiv p\label{idem_second}
+\end{align}
+\end{subequations}
+
+\subsection{Double Negation}
+
+\begin{equation}
+\neg (\neg p) \equiv p
+\end{equation}
+
+\subsection{Communative Laws}
+
+\begin{subequations}\label{communative}
+\begin{align}
+p \lor q \equiv q \lor p\label{comm_first}\\
+p \wedge p \equiv q \wedge p\label{comm_second}
+\end{align}
+\end{subequations}
+
+\subsection{Associative Laws}
+
+\begin{subequations}\label{associative}
+\begin{align}
+(p \lor q) \lor r \equiv p \lor (q \lor r)\label{ass_first}\\
+(p \wedge q) \wedge r \equiv p \wedge (q \wedge r)\label{ass_second}
+\end{align}
+\end{subequations}
+
+\subsection{Distributive Laws}
+
+\begin{subequations}\label{distributive}
+\begin{align}
+p \lor (q \wedge r) \equiv (p \lor q) \wedge (p \lor r)\label{distr_first}\\
+p \wedge (q \lor r) \equiv (p \wedge q) \lor (p \wedge r)\label{distr_second}
+\end{align}
+\end{subequations}
+
+\subsection{Absorption Laws}
+
+\begin{subequations}\label{absorption}
+\begin{align}
+p \lor (p \wedge q) \equiv p\label{absorb_first}\\
+p \wedge (p \lor q) \equiv p\label{absorb_second}
+\end{align}
+\end{subequations}
+
+\subsection{Absorption Laws}
+
+\begin{subequations}\label{negation}
+\begin{align}
+p \lor \neg p\equiv T\label{neg_first}\\
+p \wedge \neg p \equiv F\label{neg_second}
+\end{align}
+\end{subequations}
+%
+%
+%
+% Set Theory
+%
+%
+%
+\pagebreak
+\section{Sets}
+\setcounter{equation}{0}
+
+\subsection{Set}
+A set is an unordered collection of elements where elements are refered to as members of the set.
+\begin{equation}
+S
+\end{equation}
+
+\subsection{Set Membership}
+s is an member of the set S.
+\begin{equation}
+s \in S
+\end{equation}
+
+\subsection{Set Membership}
+s is not an member of the set S.
+\begin{equation}
+s \not \in S
+\end{equation}
+
+\subsection{Roster Notation}
+Roster notation desribes a set by listing the set's elements
+\begin{equation}
+S = \{s_1, \ldots, s_n\}
+\end{equation}
+
+\subsection{Set Builder Notation}
+Set builder notation determines membership an element s in a set S based on a property or properties, P(s)
+\begin{equation}
+S = \{s | P(s)\}
+\end{equation}
+
+\subsection{Null Set}
+The null set, $\emptyset$, contains no elements
+\begin{equation}
+\{ \}
+\end{equation}
+
+\subsection{Singleton Set}
+The singleton set contains exaclty one element, the null set
+\begin{equation}
+\{ \emptyset\}
+\end{equation}
+
+\subsection{Subset}
+The set A is a subset of set B, denoted $A \subseteq B$,
+is true 
+if all members of A are also members of B
+and false 
+if there is a single $a \in A$ such that $x \not \in B$
+\begin{equation}
+\forall x (x \in A \rightarrow x \in B)
+\end{equation}
+
+\subsection{Proper Subset}
+The set A is a proper subset of a set B, denoted $A \subset B$,
+is true 
+if A is a subset of B 
+and 
+there exists an x of B that is not an element of A
+\begin{equation}
+\forall x (x \in A \rightarrow x \in B) \wedge \exists x (x \in B \wedge x \not \in A)
+\end{equation}
+
+\subsection{Set Equality}
+Two sets are equal, denoted $A = B$,
+if and only if
+they have the same elements
+\begin{equation}
+\forall x(x \in A \leftrightarrow x \in B)
+\end{equation}
+
+\subsection{Cardinality}
+The set A with n distinct elements, where n is a non negative integer,
+has a cardinality or size of n.
+
+\begin{equation}
+\left| {A} \right|
+\end{equation}
+
+\subsection{Power Set}
+Given a set A, the power set of A is the set of all subsets of the set A 
+
+\begin{equation}
+\mathcal P \left({S}\right)
+\end{equation}
+
+%
+%
+%
+% Number Theory
+%
+%
+%
+\pagebreak
+\section{Number Theory and Cryptography}
+\setcounter{equation}{0}
+% Eulers 
+If 
+n
+and
+m
+are
+relatively
+prime 
+for
+some
+m,n $\in$ $\mathbb{Z}^+$
+\begin{align}
+n^{\Phi(m)}\equiv 1\mod{m}
+\end{align}
+
+
+% Eulers 
+If 
+n
+and
+m
+are
+relatively
+prime 
+for
+some
+m,n $\in$ $\mathbb{Z}^+$
+\begin{align}
+n^{\Phi(m)} - 1\equiv 0\mod{m}
+\end{align}
+\end{document}
