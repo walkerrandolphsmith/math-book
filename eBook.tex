@@ -428,12 +428,26 @@ if and only if $a_i = b_i$ for $i = 1,2,\ldots,n$
 (a_1, a_2, \ldots, a_n) = (b_1, b_2, \ldots, b_n)
 \end{equation}
 
-\subsection{Ordered n-tuples Equality}
+\subsection{Cartesian Poduct}
 The cartesian product is the set of all ordered pairs (a,b), where a $\in$ A and b $\in$ B
 \begin{equation}
 A \times B = \{(a,b)\mid\text{a $\in$ A $\wedge$ b $\in$ B}\}
 $$
 $$\end{equation}
+
+\subsection{Cartesian Poduct of Many Sets}
+The cartesian product of the sets $A_1,A_2,\ldots,A_n$,
+denoted $A_1 \times A_2 \times \cdots \times A_n$,
+is 
+the set of ordered n-tuples ($a_1,a_2,\ldots,a_n$)
+where $a_i$ belongs to $A_i$ for $i = 1,2,\ldots,n$
+\begin{subequations}
+\begin{align*}
+A_1 \times A_2 \times \cdots \times A_n =\\ 
+\{ (a_1,a_2,\ldots,a_n)\mid\text{ $a_i \in A_i$ for $i = 1,2,\ldots,n$} \}
+\end{align*}
+\end{subequations}
+
 
 \subsection{Union}
 The of union of set A and B , denoted 
@@ -462,6 +476,32 @@ that are members of B
 \begin{equation}
 \mbox{A} - \mbox{B} = \{ s \in A \mid\text{s $\not \in$ B} \}
 \end{equation}
+
+\subsection{Truth Set}
+Given a predicate P and domain D, the truth set of P 
+is 
+the set of elements x in D for which P(x) is true
+\begin{equation}
+\{ x \in D \mid\text P(x) \}
+\end{equation}
+
+\subsection{Universal Quantification Over a Set}
+$\forall$ x $\in$ S(P(x)) is shorthand notation that denotes
+the universal quatification of P(x) over all the elements in the set S.
+Statement is true over domain U 
+if and only if
+the truth set of P = U
+\begin{equation}
+\forall x \left( x \in S \rightarrow P(x) \right)
+\end{equation}
+
+\subsection{Existential Quantification Over a Set}
+$\exists$ x $\in$ S(P(x)) is shorthand notation that denotes
+the existential quatification of P(x) over all the elements in the set S
+\begin{equation}
+\exists x \left( x \in S \rightarrow P(x) \right)
+\end{equation}
+
 
 %
 %
