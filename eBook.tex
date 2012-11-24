@@ -94,6 +94,30 @@ and true otherwise.
 \mbox{p} \rightarrow \mbox{q}
 \end{equation}
 
+\subsection{Converse}
+The converse of p $\rightarrow$ q
+is the conditional statement
+
+\begin{equation}
+\mbox{q} \rightarrow \mbox{p}
+\end{equation}
+
+\subsection{Contrapositive}
+The contrapositive of p $\rightarrow$ q
+is the conditional statement
+
+\begin{equation}
+\neg \mbox{q} \rightarrow \neg \mbox{p}
+\end{equation}
+
+\subsection{Inverse}
+The inverse of p $\rightarrow$ q
+is the conditional statement
+
+\begin{equation}
+\neg \mbox{p} \rightarrow \neg \mbox{q}
+\end{equation}
+
 \subsection{Biconditional statement}
 The biconditional statement p if and only if q
 is true
@@ -313,13 +337,13 @@ S
 \end{equation}
 
 \subsection{Set Membership}
-s is an member of the set S.
+s is a member of the set S.
 \begin{equation}
 s \in S
 \end{equation}
 
 \subsection{Set Membership}
-s is not an member of the set S.
+s is not a member of the set S.
 \begin{equation}
 s \not \in S
 \end{equation}
@@ -411,6 +435,78 @@ A \times B = \{(a,b)\mid\text{a $\in$ A $\wedge$ b $\in$ B}\}
 $$
 $$\end{equation}
 
+\subsection{Union}
+The of union of set A and B , denoted 
+is the set containing members of the set A or B
+\begin{equation}
+\mbox{A} \cup \mbox{B} = \{s\mid\text{s $\in$ A $\lor$ s $\in$ B}\}$$
+$$\end{equation}
+
+\subsection{Intersect}
+The of intersect of set A and B 
+is the set containing members of sets A and B
+\begin{equation}
+\mbox{A} \cap \mbox{B} = \{s\mid\text{s $\in$ A $\wedge$ s $\in$ B}\}$$
+$$\end{equation}
+
+\subsection{Disjoint Sets}
+Two sets are disjoint if their intersect is the set containing no elements
+\begin{equation}
+\mbox{A} \cap \mbox{B} = \emptyset
+\end{equation}
+
+\subsection{Difference}
+The of difference of set A and B 
+is the set containing members of sets A 
+that are members of B
+\begin{equation}
+\mbox{A} - \mbox{B} = \{ s \in A \mid\text{s $\not \in$ B} \}
+\end{equation}
+
+%
+%
+%
+% Relations
+%
+%
+%
+\pagebreak
+\section{Relations}
+\setcounter{equation}{0}
+
+\subsection{Reflexive}
+The relation R on a set A is reflexive 
+if a ordered pair (a,a) $\in$ R for every a $\in$ A
+\begin{equation}
+\forall a \in A((a,a) \in R)
+\end{equation}
+
+\subsection{Symmetric}
+The relation R on a set A is symmetric 
+if the ordered pairs (a,b) $\in$ R 
+then (b,a) $\in$ R
+\begin{equation}
+\forall a \forall b \left((a,b)\in R \rightarrow (b,a)\in R \right)
+\end{equation}
+
+\subsection{Anti-Symmetric}
+The relation R on a set A is antisymmetric 
+if the ordered pairs (a,b) $\in$ R 
+and (b,a) $\in$ R 
+then a = b
+\begin{equation}
+\forall a \forall b \left(( (a,b)\in R \wedge (b,a)\in R \rightarrow (a = b) \right)
+\end{equation}
+
+\subsection{Transative}
+The relation R on a set A is transative 
+if the ordered pairs (a,b) $\in$ R 
+and (b,c) $\in$ R 
+then (a,c) $\in$ R
+\begin{equation}
+\forall a \forall b \forall c \left(( (a,b)\in R \wedge (b,c)\in R \rightarrow (a,c) \in R \right)
+\end{equation}
+
 %
 %
 %
@@ -449,6 +545,15 @@ n^{\Phi(m)} - 1\equiv 0\mod{m}
 \end{align}
 \end{subequations}
 
-
+%
+%
+%
+% Graph Theory
+%
+%
+%
+\pagebreak
+\section{Graph Theory}
+\setcounter{equation}{0}
 
 \end{document}
