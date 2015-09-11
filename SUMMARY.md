@@ -1,4 +1,4 @@
 # Summary
 
-* Logic
+* [Logic](logic.md)
 
