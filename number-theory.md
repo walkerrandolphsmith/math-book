@@ -34,3 +34,9 @@ $$
 $$
 n^{\Phi(m)} - 1\equiv 0\mod{m}
 $$
+
+##Prime Counting Function
+
+$$
+\lim_{x\to\infty} \frac{\pi(x)}{x/ln(x)} = 1
+$$
