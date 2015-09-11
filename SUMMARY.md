@@ -1,3 +1,3 @@
 # Summary
 
-* [Logic](chapter1.md)
+* [Logic](logic.md)
