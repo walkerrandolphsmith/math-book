@@ -5,4 +5,4 @@
 * [Sets](sets.md)
 * [Relations](relations.md)
 * [Number Theory](number-theory.md)
-
+* [Strange Planet](strange-planet.md)
