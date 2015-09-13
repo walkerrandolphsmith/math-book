@@ -6,7 +6,7 @@ Any two different species can mate. If they do the participants die.Two children
 
 The planet fails if all individuals are of the same species. A sequence of three integers represents the number of individuals of species a, b, and c respectively and is known as state. a-event occurs when individuals of species b and c breed and are replaced by two a's. Analogously b-events and c-events. events are represented by the symbols a, b, and c respectively.
 
-
+![two individuals](two-individuals.png)
 
 ![three individuals](three-individuals.png)
 
