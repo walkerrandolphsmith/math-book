@@ -125,3 +125,20 @@ $$G_1\subset G_2$$
 The resulting subgraph from removing an edge from a graph G has the same vertex set and its edge set is E - e. 
 
 $$G - e = (V, E - \{ e \})$$
+
+##Graph Invariants
+Two graphs may have the same form if there is a one-to-one correspondence between their vertex sets that preserves the relationships, also known as the edges, between the vertices. In chemistry when two different molecules have the same chemical formula but different tertiary shapes they are isomorphic.
+
+A chemical formula corresponds to the number of vertices, degree of vertices, and number of edges and the digraph representation corresponds to the tertiary structure of the molecule. Thus, if a one to one and onto function exists then the graphs $$G_1$$ and $$G_2$$ are isomorphic. 
+
+#### Isomorphism
+
+The simple graphs $$G_1 = (V_1, E_1)$$ and $$G_2 = (V_2, E_2)$$ are isomorphic if there exists a one-to-one and onto function _f_ from $$V_1$$ and $$V_2$$ with the property that $$a$$ and $$b$$ are adjacent in $$G_1$$ if and only if $$f(a)$$ and $$f(b)$$ are adjacent in $$G_2$$, for all $$a$$ and $$b$$ in $$V_1$$.
+
+#### Graph Invariants
+
+A property of a graph that is preserved in graph isomorphism is a **graph invariant**. The number of vertices, number of edges, and number of vertices of each degree are all properties that are preserved in isomorphism. However determining whether a graph is not isomorphic is not as clear of a procedure. When a graph does not preserve graph invariants then it is **nonisomorphic**
+
+#### Self Complementary
+
+A simple graph G is called self-complementary if $$G$$ and $$\overline{G}$$ are isomorphic.
