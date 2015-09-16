@@ -4,6 +4,7 @@
 * [Laws of Logical Equivalence](laws-of-logical-equivalence.md)
 * [Sets](sets.md)
 * [Relations](relations.md)
+* [Graphs](graph-theory.md)
 * [Base Conversion](base-conversion.md)
 * [Number Theory](number-theory.md)
 * [RSA Cryptography](rsa.md)
