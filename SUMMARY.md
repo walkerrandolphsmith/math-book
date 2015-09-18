@@ -11,3 +11,4 @@
 * [Number Theory](number-theory.md)
 * [RSA Cryptography](rsa.md)
 * [Strange Planet](strange-planet.md)
+* [Calculus](calculus.md)
