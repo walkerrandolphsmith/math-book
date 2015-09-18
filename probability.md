@@ -1,10 +1,11 @@
 ##Permutations 
+The number of different arrangements of a k-element subset of the n-element set S.
 $$
 P(n,k) = n \times (n - 1) \times \dots \times (n-k + 1) = {n \choose k} = \frac{n!}{(n-k)!}
 $$
 
 ##Cobinations 
-Also refered to as Binomial Coefficents
+The number of unique, ordered arrangements of a k-element subset of the n-element set S. Also referred to as Binomial Coefficients
 $$
 C(n,k) = {n \choose k} = \frac{n!}{k!(n-k)!} 
 $$
