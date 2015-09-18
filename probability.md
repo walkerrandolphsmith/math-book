@@ -1,7 +1,7 @@
 ##Permutations 
 The number of different arrangements of a k-element subset of the n-element set S.
 $$
-P(n,k) = n \times (n - 1) \times \dots \times (n-k + 1) = {n \choose k} = \frac{n!}{(n-k)!}
+P(n,k) = n \times (n - 1) \times \dots \times (n-k + 1) = \frac{n!}{(n-k)!}
 $$
 
 ##Cobinations 
