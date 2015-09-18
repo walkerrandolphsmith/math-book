@@ -7,6 +7,7 @@
 * [Relations](relations.md)
 * [Graphs](graph-theory.md)
 * [Base Conversion](base-conversion.md)
+* [Probability](probability.md)
 * [Number Theory](number-theory.md)
 * [RSA Cryptography](rsa.md)
 * [Strange Planet](strange-planet.md)
