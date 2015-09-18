@@ -1,7 +1,12 @@
-
-##N choose K
+##Permutations 
 $$
-{n \choose k} = \frac{n!}{k!(n-k)!} 
+P(n,k) = n \times (n - 1) \times \dots \times (n-k + 1) = {n \choose k} = \frac{n!}{(n-k)!}
+$$
+
+##Cobinations 
+Also refered to as Binomial Coefficents
+$$
+C(n,k) = {n \choose k} = \frac{n!}{k!(n-k)!} 
 $$
 
 ##Pascal's Triangle
