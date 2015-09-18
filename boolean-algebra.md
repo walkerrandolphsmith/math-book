@@ -9,11 +9,11 @@ Karnaugh maps use the minterms of a boolean expression to create a two dimension
 
 A <code>literal</code> is a boolean variable or its complement.
 
-A <code>minterm</code> is a product of n literals, one literal for each variable. A boolean expression with n variables has $2^n$ minterms. 
+A <code>minterm</code> is a product of n literals, one literal for each variable. A boolean expression with n variables has $$2^n$$ minterms. 
 
-Product of sums, <code>POS</code>, is a boolean expression that comes in the form $(x \wedge y) \lor \ldots \lor (\neg x \wedge y)$ with **any combination** and **any number** of boolean **literals**. 
+Product of sums, <code>POS</code>, is a boolean expression that comes in the form $$(x \wedge y) \lor \ldots \lor (\neg x \wedge y)$$ with **any combination** and **any number** of boolean **literals**. 
 
-Sum of products, <code>SOP</code> is a boolean expression that comes in the form $(x \lor y) \wedge \ldots \wedge (\neg x \lor \neg y)$ with **any combination** of **any number** of boolean **literals.**
+Sum of products, <code>SOP</code> is a boolean expression that comes in the form $$(x \lor y) \wedge \ldots \wedge (\neg x \lor \neg y)$$ with **any combination** of **any number** of boolean **literals.**
 
 
 Any boolean expression can be expressed as a boolean sum of minterms. Each minterm is the product of boolean variables and their complements. The set, $$ \{ \dot, +, \neg \} $$ is <code>functionally complete</code> 
