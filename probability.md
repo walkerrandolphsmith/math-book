@@ -10,12 +10,21 @@ $$
 C(n,k) = {n \choose k} = \frac{n!}{k!(n-k)!} 
 $$
 
-##Binomial Expansion
+##Pascal's Triangle
 $$
-\sum_{k=0}^{n} {{n \choose k} x^{n-k} + y^{k}} = (x + y)^{n}
+\newcommand\cn[2]{\llap{#1}\rlap{#2}\,}
+    \begin{array}{c}
+    &&&&&&\cn{1}{}\\
+    &&&&&\cn{1}{}&\cn{}{}&\cn{1}{}\\
+    &&&&\cn{1}{}&\cn{}{}&\cn{2}{}&\cn{}{}&\cn{1}{}\\
+    &&&\cn{1}{}&\cn{}{}&\cn{3}{}&\cn{}{}&\cn{3}{}&\cn{}{}&\cn{1}{}\\
+    &&\cn{1}{}&\cn{}{}&\cn{4}{}&\cn{}{}&\cn{6}{}&\cn{}{}&\cn{4}{}&\cn{}{}&\cn{1}{}\\
+\end{array}
 $$
 
-##Permutations of multisets  
+
+
+##Permutations of multisets
 The number of arrangements of the n-element multiset,M in which each element appears exactly as often as the multiplicity.
 $$
 {n \choose k_1,k_2, \dots ,k_i} = \frac{n}{k_1!k_2! \dots k_i!}
