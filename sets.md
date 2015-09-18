@@ -43,11 +43,11 @@ $$
 $$
 
 #Subset
-The set A is a subset of set B, denoted $A \subseteq B$,
+The set A is a subset of set B, denoted $$A \subseteq B$$,
 is true 
 if all members of A are also members of B
 and false 
-if there is a single $a \in A$ such that $x \not \in B$
+if there is a single $$a \in A$$ such that $$x \not \in B$$
 $$
 \forall x (x \in A \rightarrow x \in B)
 $$
@@ -63,7 +63,7 @@ $$
 $$
 
 #Set Equality
-Two sets are equal, denoted $A = B$,
+Two sets are equal, denoted $$A = B$$,
 if and only if
 they have the same elements
 $$
@@ -86,14 +86,15 @@ $$
 $$
 
 #Ordered n-tuples
-An ordered collection $(a_1, a_2, \ldots, a_n)$ has $a_1$ as its first element, $a_2$ as its second element, \ldots, and $a_n$ as its last element.
+An ordered collection $$(a_1, a_2, \ldots, a_n)$$ has $$a_1$$ as its first element, $$a_2$$ as its second element, $$\ldots$$, and $$a_n$$ as its last element.
 $$
 (a_1, a_2, \ldots, a_n)
 $$
 
 #Ordered n-tuples Equality
-Two ordered n-tuples, $(a_1, a_2, \ldots, a_n)$ and $(b_1, b_2, \ldots, b_n)$ are equal
-if and only if $a_i = b_i$ for $i = 1,2,\ldots,n$
+Two ordered n-tuples, $$(a_1, a_2, \ldots, a_n)$$ and $$(b_1, b_2, \ldots, b_n)$$ are equal
+if and only if $$a_i = b_i$$ for $$i = 1,2,\ldots,n$$
+
 $$
 (a_1, a_2, \ldots, a_n) = (b_1, b_2, \ldots, b_n)
 $$
@@ -137,34 +138,30 @@ $$
 $$
 
 #Difference
-The of difference of set A and B 
-is the set containing members of sets A 
-that are members of B
+The of difference of set $$A$$ and $$B$$ is the set containing members of sets $$A$$ that are members of $$B$$
 $$
 \mbox{A} - \mbox{B} = \{ s \in A \mid\text{s $\not \in$ B} \}
 $$
 
 #Truth Set
-Given a predicate P and domain D, the truth set of P 
-is 
-the set of elements x in D for which P(x) is true
+Given a predicate $$P$$ and domain $$D$$, the truth set of $$P$$ is the set of elements $$x$$ in $$D$$ for which $$P(x)$$ is true
 $$
 \{ x \in D \mid\text P(x) \}
 $$
 
 #Universal Quantification Over a Set
 $\forall$ x $\in$ S(P(x)) is shorthand notation that denotes
-the universal quatification of P(x) over all the elements in the set S.
-Statement is true over domain U 
-if and only if
-the truth set of P = U
+the universal quatification of $$P(x)$$ over all the elements in the set $$S$$.
+Statement is true over domain $$U$$ if and only if the truth set of $$P = U$$
+
 $$
 \forall x \left( x \in S \rightarrow P(x) \right)
 $$
 
 #Existential Quantification Over a Set
-$\exists$ x $\in$ S(P(x)) is shorthand notation that denotes
-the existential quatification of P(x) over all the elements in the set S
+$$\exists x \in S(P(x))$$ is shorthand notation that denotes
+the existential quatification of $$P(x)$$ over all the elements in the set $$S$$
+
 $$
 \exists x \left( x \in S \rightarrow P(x) \right)
 $$
