@@ -10,9 +10,6 @@ $$
 C(n,k) = {n \choose k} = \frac{n!}{k!(n-k)!} 
 $$
 
-##Pascal's Triangle
-
-
 ##Binomial Expansion
 $$
 \sum_{k=0}^{n} {{n \choose k} x^{n-k} + y^k} = (x + y)^n
