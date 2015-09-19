@@ -23,6 +23,12 @@ $$
 $$
 
 
+##Binomial Expansion
+$$
+(x + y)^{n} = \sum_{k = 0}^{n} {} {n \choose k}x^{n-k}y^{k}
+$$
+
+
 ##Permutations of multisets
 The number of arrangements of the n-element multiset,M in which each element appears exactly as often as the multiplicity.
 $$
