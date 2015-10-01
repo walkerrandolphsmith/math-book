@@ -27,10 +27,10 @@ The tau function is the total number of positive integer divisors of its input.
 Let $$n \in \mathbb{Z}$$ such that $$n \geq 1$$
 
 $$
-\tau(n) = \sum_{d\n}1
+\tau(n) = \sum_{d\backslash{n}}1
 $$
 
-where $$\sum_{d\n}1$$ is the sum over all divisors of n.
+where $$\sum_{d\backslash{n}}1$$ is the sum over all divisors of n.
 
 ##Coprime
 Integers m and n are relatively prime if 
@@ -79,7 +79,8 @@ Thus
 $$
 a = (2^p - 1)2^{p-1}
   = (2^p - 1)\frac{2^p}{2}
-  = \frac{n(n + 1)}{2} \text{where } n = 2^p - 1$$
+  = \frac{n(n + 1)}{2} \text{where } n = 2^p - 1
+$$
   
 ##Perfect and Prime Relationship
 Let 
