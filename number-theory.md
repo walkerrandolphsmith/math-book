@@ -32,6 +32,13 @@ $$
 
 where $$\sum_{d\backslash{n}}1$$ is the sum over all divisors of n.
 
+##GCD
+The greatest common divisor of two integers $$i$$ and $$j$$, such that at least one is non-zero, is the largest positive integer, $$m$$ such that $$m \mid i$$ and $$m \mid j$$. 
+
+##LCM
+The least common multiple of two integers $$i$$ and $$j$$ is the smallest number that is a multiple of both $$i$$ and $$j$$.
+
+The $$LCM(i,j)$$ can be computed by obtaining the prime factorization of $$i$$ and $$j$$, take the union of the two resulting sets and return the smallest value of the new set..
 ##Coprime
 Integers m and n are relatively prime if 
 $$
@@ -89,3 +96,6 @@ $$n \in \mathbb{N}$$
 Let $$2^n - 1$$ be prime
 
 Then $$2^{n - 1}(2^n -1) \text{is perfect.}$$ 
+
+##Mersenne Prime
+A mersenne prime is a prime number of the ofrm $$2^p - 1$$ where $$p$$ is a prime number.
