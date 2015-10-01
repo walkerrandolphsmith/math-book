@@ -58,11 +58,19 @@ $$
 $$
 
 ##Even Perfect numbers are triangular
-Let $$a$$ be an even prefect number.
-$$a$$ is of the $$2^{p-1}(2^p - 1)$$ where $$2^p - 1$$ is prime.
+Let $$a \in \mathbb{N} $$ be an even prefect number.
+$$a$$ is of the form $$2^{p-1}(2^p - 1)$$ where $$2^p - 1$$ is prime.
 
 Thus 
 $$
 a = (2^p - 1)2^{p-1}
   = (2^p - 1)\frac{2^p}{2}
   = \frac{n(n + 1)}{2} \text{where } n = 2^p - 1$$
+  
+##Perfect and Prime Relationship
+Let 
+$$n \in \mathbb{N}$$
+
+Let $$2^n - 1$$ be prime
+
+Then $$2^{n - 1}(2^n -1) \text{is perfect.}$$ 
