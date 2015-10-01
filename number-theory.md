@@ -15,8 +15,22 @@ If a $$\mid$$ b, then a $$\mid$$ bc for all integers c
 
 If a $$\mid$$ c and b $$\mid$$ c, then a $$\mid$$ c
 
+##Prime
+A prime number, p, is a positive integer that has exactly two divisors: p and 1.
 
+##Composite
+A composite number, c, is a positive integer that has more than two divisors.
 
+##Tau Function
+The tau function is the total number of positive integer divisors of its input.
+
+Let $$n \in \mathbb{Z}$$ such that $$n \geq 1$$
+
+$$
+\tau(n) = \sum_{d\n}1
+$$
+
+where $$\sum_{d\n}1$$ is the sum over all divisors of n.
 
 ##Coprime
 Integers m and n are relatively prime if 
