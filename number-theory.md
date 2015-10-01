@@ -54,5 +54,15 @@ $$1 + 2 + 4 + 7 + 14 + 28 = 56 = 2 \times 28$$
 A triangle number, n, is computed by the sum of the natural numbers 1 to n counts. 
 
 $$
-\sum_{k=1}{n}
+\sum_{k=1}^{n} k = \frac{n(n + 1)}{2}
 $$
+
+##Even Perfect numbers are triangular
+Let $$a$$ be an even prefect number.
+$$a$$ is of the $$2^{p-1}(2^p - 1)$$ where $$2^p - 1$$ is prime.
+
+Thus 
+$$
+a = (2^p - 1)2^{p-1}
+  = (2^p - 1)\frac{2^p}{2}
+  = \frac{n(n + 1)}{2} \text{where } n = 2^p - 1$$
