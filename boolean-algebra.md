@@ -48,16 +48,29 @@ $$ (\neg x + y + \neg z) * (x + y +\neg z) $$
 
 First we must create a 3-dimensional K-map to address the eight minterms of this expression.
 
-![k-map](k-map/k-map.png)
+|    | 00 | 01 | 11 | 10 | XY
+| -- | -- | -- | -- | -- |
+| 0  |    |    |    |    |
+| 1  |    |    |    |    |
+|  Z |
+
 
 Each sum in the boolean expression must be converted to a bit string using Grey code. 010 represents $$ (\neg x + y + \neg z) $$ and 110 represents 
 $$ (x + y +\neg z) $$. Label the cells of the map that are addressed by those minterms with 1.  
 
-![k-map-example](k-map/k-map-example.png) 
+|    | 00 | 01 | 11 | 10 | XY
+| -- | -- | -- | -- | -- |
+| 0  | 0  | 1  | 1  |  0 |
+| 1  | 0  | 0  |  0 |  0 |
+| Z |
 
 A comparison of a literal in one minterm to the next is shown in the following diagram.
 
-![k-map-example-differnce](k-map/k-map-example-difference.png)
+|    | 00 | <span style="color: red;">0</span>1 | <span style="color: red;">1</span>1 | 10 | XY
+| -- | -- | -- | -- | -- |
+| 0  | 0  | 1  | 1  |  0 |
+| 1  | 0  | 0  |  0 |  0 |
+| Z |
 
 The SOP simplification is a POS where each product is made of the literals that did not differ in value. The only $$2^k$$ cluster produces the product $$(y * \neg z)$$. Therefore the original, boolean expression is logically equivalent to this term. 
 
